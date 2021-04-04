@@ -1,1 +1,7 @@
-<p>read works!</p>
+<!-- <div class='right' , *ngIf="tutorials"> -->
+    <ul>
+        <li (click)="delTutorial(i)" *ngFor="let tut of tutorials |async; let i = index">
+            <a [href]="tut.url" target="_blank"> {{tut.name}}</a>
+        </li>
+    </ul>
+<!-- </div> -->

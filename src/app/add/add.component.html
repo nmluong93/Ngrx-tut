@@ -1,1 +1,6 @@
-<p>add works!</p>
+
+<input #name name="tutName" placeholder="name">
+<br>
+<input #url name="tutUrl" placeholder="url">
+<br>
+<button (click)="add_Tutorial(name.value, url.value)">Create</button>
